@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+     
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+   position: relative;   
+   padding-top: 0.1px;
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+     height: 100%;
+     width: 20%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: monument;
+     font-size: 40px;
+     letter-spacing: -2px;
+}
+#nav h2{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+    border: none;
+}
+#center{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative; 
+    padding: 4vw;
+    
+}
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#overlay{
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2vw 3vw;
+    color: #fff;
+    /* background: red; */
+     
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:2vh ;
+
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 4vw;
+    font-weight: 100;
+    letter-spacing: -2px;
+    mix-blend-mode: difference;
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    border-radius: 50%;
+    border: 1px solid white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 1vw;
+    /* background-color: green; */
+    
+}
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+    /* background-color: blue; */
+}
+#over img{
+    height: 3vw;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+#scroll img{
+    height: 110%;
+    border-radius: 50%;
+    width: 13%;
+    margin: 1.4vw;
+    object-fit: cover;
+    object-position: top ;
+    border: 1px solid black;
+}
+#container{
+    height: 90%;
+    width: 110%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 0 10vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabet h5{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+    margin-right: 2vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    letter-spacing: 4px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease 0.2;
+}
+#alphabet h6:hover{
+    border: 1px solid rgb(0, 0, 0);
+}
+#page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 5vw;
+}
+ #page2-part1{
+    height: 100%;
+    width: 70%;
+  
+ }
+ #page2-part1 img{
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    object-position: 5% 40%;
+ }
+ #page2-part1 h3{
+    font-size: 2.7vw;
+    font-weight: 900;
+    font-family: monument;
+
+ }
+ #page2-part2{
+    height: 100%;
+    width: 40%;
+ }
+ #page2-part2 img{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 40%;
+ }
+
+ #content{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+#content h5{
+    width: 52%;
+    font-size: 1.7vw;
+}
+#content h6{
+    font-size:1.1vw;
+    width: 40%;
+    font-weight: 100;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+    
+}
